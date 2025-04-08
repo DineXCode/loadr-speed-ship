@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <a href="#hero" className="flex items-center">
             <img 
-              src="public/lovable-uploads/03f766b7-f449-4ba3-8278-feecea409c27.png" 
+              src="https://res.cloudinary.com/djc7mipe7/image/upload/v1744135921/Logo_LOADR_gkhckl.jpg" 
               alt="LOADR Logo" 
               className="h-10 md:h-12"
             />
