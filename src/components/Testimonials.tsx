@@ -1,28 +1,28 @@
-
 import React, { useState } from 'react';
 import { ArrowLeft, ArrowRight, Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Rajesh Kumar',
-    position: 'Small Business Owner',
-    testimonial: 'LOADR has transformed my business logistics. The on-demand booking and real-time tracking have reduced our delivery times by 40%. Highly recommended!',
-    rating: 5
+    name: 'Dine Babu',
+    position: 'Student at SCT college of engineering',
+    testimonial: 'As a student, shifting between hostels and home used to be stressful. LOADR made the entire process super easy and reliable. The real-time tracking and professional service gave me peace of mind during my move!',
+    rating: 5,
+    image: "/Dine.jpg",
   },
   {
-    name: 'Priya Singh',
+    name: 'Siva M S',
     position: 'E-commerce Entrepreneur',
     testimonial: 'As an online store owner, reliable delivery is crucial. LOADR provides consistent and timely services that my customers love. Their drivers are professional and courteous.',
     rating: 5
   },
   {
-    name: 'Amit Patel',
+    name: 'Vijay Kebb',
     position: 'Warehouse Manager',
     testimonial: 'The bulk booking feature and business dashboard have streamlined our daily operations. LOADR\'s customer service is exceptional whenever we need assistance.',
     rating: 4
   },
   {
-    name: 'Sunita Sharma',
+    name: 'Pranav Prabhakar',
     position: 'Homeowner',
     testimonial: 'I used LOADR for my house move and was impressed with their efficiency. The movers were careful with my belongings, and the entire process was smooth.',
     rating: 5
@@ -74,30 +74,37 @@ const Testimonials = () => {
                 "{testimonials[currentIndex].testimonial}"
               </p>
               
-              <div className="flex justify-between items-center">
+              <div className="flex items-center gap-4 mb-4">
+                {testimonials[currentIndex].image && (
+                  <img
+                    src={testimonials[currentIndex].image}
+                    alt={testimonials[currentIndex].name}
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
+                )}
                 <div>
                   <p className="font-semibold">{testimonials[currentIndex].name}</p>
                   <p className="text-gray-500 text-sm">{testimonials[currentIndex].position}</p>
                 </div>
-                
-                <div className="flex gap-2">
-                  <button 
-                    onClick={prevTestimonial} 
-                    className="p-2 border border-gray-200 rounded-full hover:bg-loadr hover:text-white hover:border-loadr transition"
-                  >
-                    <ArrowLeft className="h-5 w-5" />
-                  </button>
-                  <button 
-                    onClick={nextTestimonial} 
-                    className="p-2 border border-gray-200 rounded-full hover:bg-loadr hover:text-white hover:border-loadr transition"
-                  >
-                    <ArrowRight className="h-5 w-5" />
-                  </button>
-                </div>
+              </div>
+
+              <div className="flex gap-2">
+                <button 
+                  onClick={prevTestimonial} 
+                  className="p-2 border border-gray-200 rounded-full hover:bg-loadr hover:text-white hover:border-loadr transition"
+                >
+                  <ArrowLeft className="h-5 w-5" />
+                </button>
+                <button 
+                  onClick={nextTestimonial} 
+                  className="p-2 border border-gray-200 rounded-full hover:bg-loadr hover:text-white hover:border-loadr transition"
+                >
+                  <ArrowRight className="h-5 w-5" />
+                </button>
               </div>
             </div>
           </div>
-          
+
           <div className="flex justify-center mt-6">
             {testimonials.map((_, index) => (
               <button

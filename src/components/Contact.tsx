@@ -65,7 +65,7 @@ const Contact = () => {
                 <Phone className="h-5 w-5 text-loadr mr-3 mt-1" />
                 <div>
                   <p className="font-medium">Phone</p>
-                  <p className="text-gray-600">+91 98765 43210</p>
+                  <p className="text-gray-600">+91 95675 63944</p>
                 </div>
               </div>
               
@@ -81,7 +81,7 @@ const Contact = () => {
                 <MapPin className="h-5 w-5 text-loadr mr-3 mt-1" />
                 <div>
                   <p className="font-medium">Address</p>
-                  <p className="text-gray-600">123 Tech Park, Sector 15<br />Mumbai, Maharashtra 400001</p>
+                  <p className="text-gray-600">123 Technopark,Kazhakootam<br />Thiruvananthapuram, Kerala 695018</p>
                 </div>
               </div>
             </div>

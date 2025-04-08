@@ -33,7 +33,7 @@ const Hero = () => {
           
           <AnimationWrapper delay={0.3}>
             <p className="text-xl text-gray-100 mb-8">
-              Trucks, Tempos, and Transport Services Made Easy with LOADR
+              Trucks, Excavators, and Transport Services Made Easy with LOADR
             </p>
           </AnimationWrapper>
           
