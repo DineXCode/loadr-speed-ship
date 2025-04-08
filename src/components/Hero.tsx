@@ -16,7 +16,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://res.cloudinary.com/djc7mipe7/image/upload/v1744136073/WALLPAPER_LOADR_hffhm4.jpg" 
+          src="https://ibb.co/jPyCCZrR" 
           alt="LOADR logistics vehicles and app" 
           className="w-full h-full object-cover object-center"
         />
