@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, Truck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -17,7 +16,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="YOUR_NEW_IMAGE_URL_HERE" 
+          src="https://res.cloudinary.com/djc7mipe7/image/upload/v1744136073/WALLPAPER_LOADR_hffhm4.jpg" 
           alt="LOADR logistics vehicles and app" 
           className="w-full h-full object-cover object-center"
         />
