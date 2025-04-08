@@ -44,8 +44,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <a href="#hero" className="text-2xl font-bold text-loadr">
-            LOADR
+          <a href="#hero" className="flex items-center">
+            <img 
+              src="public/lovable-uploads/03f766b7-f449-4ba3-8278-feecea409c27.png" 
+              alt="LOADR Logo" 
+              className="h-10 md:h-12"
+            />
           </a>
         </div>
 
@@ -53,31 +57,37 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-8">
           <button
             onClick={() => scrollToSection('hero')}
-            className="font-medium text-gray-700 hover:text-loadr transition"
+            className="font-medium text-white hover:text-loadr transition"
           >
             Home
           </button>
           <button
             onClick={() => scrollToSection('services')}
-            className="font-medium text-gray-700 hover:text-loadr transition"
+            className="font-medium text-white hover:text-loadr transition"
           >
             Services
           </button>
           <button
-            onClick={() => scrollToSection('about')}
-            className="font-medium text-gray-700 hover:text-loadr transition"
+            onClick={() => scrollToSection('pricing')}
+            className="font-medium text-white hover:text-loadr transition"
           >
-            About
+            Pricing
           </button>
           <button
-            onClick={() => scrollToSection('how-it-works')}
-            className="font-medium text-gray-700 hover:text-loadr transition"
+            onClick={() => scrollToSection('track')}
+            className="font-medium text-white hover:text-loadr transition"
           >
-            How It Works
+            Track
+          </button>
+          <button
+            onClick={() => scrollToSection('about')}
+            className="font-medium text-white hover:text-loadr transition"
+          >
+            About Us
           </button>
           <button
             onClick={() => scrollToSection('contact')}
-            className="font-medium text-gray-700 hover:text-loadr transition"
+            className="font-medium text-white hover:text-loadr transition"
           >
             Contact
           </button>
@@ -88,13 +98,13 @@ const Navbar = () => {
             onClick={() => scrollToSection('contact')}
             className="bg-loadr hover:bg-loadr-dark text-white rounded-full px-6"
           >
-            Book Now
+            Book a Load
           </Button>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-700 focus:outline-none"
+          className="md:hidden text-white focus:outline-none"
           onClick={toggleMenu}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -118,16 +128,22 @@ const Navbar = () => {
               Services
             </button>
             <button
+              onClick={() => scrollToSection('pricing')}
+              className="py-2 px-4 text-left font-medium text-gray-700 hover:text-loadr"
+            >
+              Pricing
+            </button>
+            <button
+              onClick={() => scrollToSection('track')}
+              className="py-2 px-4 text-left font-medium text-gray-700 hover:text-loadr"
+            >
+              Track
+            </button>
+            <button
               onClick={() => scrollToSection('about')}
               className="py-2 px-4 text-left font-medium text-gray-700 hover:text-loadr"
             >
-              About
-            </button>
-            <button
-              onClick={() => scrollToSection('how-it-works')}
-              className="py-2 px-4 text-left font-medium text-gray-700 hover:text-loadr"
-            >
-              How It Works
+              About Us
             </button>
             <button
               onClick={() => scrollToSection('contact')}
@@ -139,7 +155,7 @@ const Navbar = () => {
               onClick={() => scrollToSection('contact')}
               className="bg-loadr hover:bg-loadr-dark text-white w-full rounded-full"
             >
-              Book Now
+              Book a Load
             </Button>
           </div>
         </div>

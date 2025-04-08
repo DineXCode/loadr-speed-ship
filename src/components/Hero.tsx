@@ -1,7 +1,8 @@
 
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Truck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { AnimationWrapper } from '@/utils/animate';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -12,48 +13,56 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-20 bg-gradient-to-br from-gray-50 to-gray-100">
-      <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-        <div className="order-2 md:order-1 animated-element fade-in" style={{ animationDelay: '0.2s' }}>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
-            Move Your Goods <span className="text-loadr">Hassle-Free</span>
-          </h1>
-          <p className="text-lg text-gray-600 mb-8">
-            LOADR provides on-demand mini-truck and goods transport services with real-time tracking, verified drivers, and instant invoicing.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              onClick={scrollToContact} 
-              className="btn-loadr"
-            >
-              Book a Truck Instantly
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button
-              variant="outline"
-              onClick={() => {
-                const element = document.getElementById('how-it-works');
-                if (element) element.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="btn-loadr-outline"
-            >
-              Learn How It Works
-            </Button>
-          </div>
-        </div>
-        <div className="order-1 md:order-2 flex justify-center animated-element fade-in" style={{ animationDelay: '0.4s' }}>
-          <div className="relative">
-            <div className="absolute -top-6 -left-6 w-20 h-20 bg-loadr/10 rounded-full"></div>
-            <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-loadr/10 rounded-full"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=600&h=450" 
-              alt="LOADR delivery truck"
-              className="rounded-2xl shadow-xl relative z-10 max-w-full"
-            />
-          </div>
+    <section id="hero" className="relative min-h-screen flex items-center pt-20">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="public/lovable-uploads/d535c31d-55fe-464d-8b7f-08c7c34b365b.png" 
+          alt="LOADR logistics vehicles and app" 
+          className="w-full h-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-3xl text-white">
+          <AnimationWrapper delay={0.1}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+              On-Demand Logistics at Your Fingertips
+            </h1>
+          </AnimationWrapper>
+          
+          <AnimationWrapper delay={0.3}>
+            <p className="text-xl text-gray-100 mb-8">
+              Trucks, Tempos, and Transport Services Made Easy with LOADR
+            </p>
+          </AnimationWrapper>
+          
+          <AnimationWrapper delay={0.5}>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button 
+                onClick={scrollToContact} 
+                className="bg-white text-loadr hover:bg-gray-100 text-lg font-medium px-8 py-6 rounded-full"
+              >
+                Book a Load
+                <Truck className="ml-2 h-5 w-5" />
+              </Button>
+              
+              <Button
+                variant="outline"
+                onClick={() => {
+                  const element = document.getElementById('how-it-works');
+                  if (element) element.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="border-2 border-white bg-transparent text-white hover:bg-white/10 text-lg font-medium px-8 py-6 rounded-full"
+              >
+                Learn How It Works
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
+          </AnimationWrapper>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
     </section>
   );
 };

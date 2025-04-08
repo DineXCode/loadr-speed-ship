@@ -21,12 +21,12 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen font-sans">
       <Navbar />
       <Hero />
       <Services />
-      <About />
       <HowItWorks />
+      <About />
       <WhyChooseUs />
       <Testimonials />
       <Contact />
