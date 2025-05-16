@@ -9,9 +9,9 @@ import { useToast } from '@/components/ui/use-toast';
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: '',
     email: '',
     phone: '',
+    name: '',
     message: '',
     service: 'intra-city'
   });
@@ -37,9 +37,9 @@ const Contact = () => {
     
     // Reset form
     setFormData({
-      name: '',
       email: '',
       phone: '',
+      name: '',
       message: '',
       service: 'intra-city'
     });
@@ -105,16 +105,34 @@ const Contact = () => {
               
               <div className="grid gap-4 mb-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Full Name
+                  <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">
+                    Service Type
                   </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
+                  <select
+                    id="service"
+                    name="service"
+                    value={formData.service}
                     onChange={handleInputChange}
-                    placeholder="Your full name"
-                    required
+                    className="w-full rounded-md border border-gray-300 py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-loadr focus:border-transparent"
+                  >
+                    <option value="intra-city">Intra-city Logistics</option>
+                    <option value="business">Business Transport</option>
+                    <option value="packers">Packers & Movers</option>
+                    <option value="express">Express Delivery</option>
+                  </select>
+                </div>
+                
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                    Pickup/Drop-off location
+                  </label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    placeholder="Please provide pickup and drop-off location details"
+                    rows={4}
                     className="w-full"
                   />
                 </div>
@@ -153,34 +171,16 @@ const Contact = () => {
                 </div>
                 
                 <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">
-                    Service Type
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                    Full Name
                   </label>
-                  <select
-                    id="service"
-                    name="service"
-                    value={formData.service}
+                  <Input
+                    id="name"
+                    name="name"
+                    value={formData.name}
                     onChange={handleInputChange}
-                    className="w-full rounded-md border border-gray-300 py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-loadr focus:border-transparent"
-                  >
-                    <option value="intra-city">Intra-city Logistics</option>
-                    <option value="business">Business Transport</option>
-                    <option value="packers">Packers & Movers</option>
-                    <option value="express">Express Delivery</option>
-                  </select>
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Details (Pickup/Drop-off location, etc.)
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    placeholder="Please provide details about your delivery needs"
-                    rows={4}
+                    placeholder="Your full name"
+                    required
                     className="w-full"
                   />
                 </div>
