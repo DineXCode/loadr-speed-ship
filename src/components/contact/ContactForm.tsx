@@ -34,9 +34,19 @@ const ContactForm: React.FC<ContactFormProps> = ({
   return (
     <div className="animated-element fade-in" style={{ animationDelay: '0.2s' }}>
       <Tabs defaultValue={userType} onValueChange={(value) => setUserType(value as 'customer' | 'driver')}>
-        <TabsList className="grid w-full grid-cols-2 mb-6">
-          <TabsTrigger value="customer">Book a Delivery</TabsTrigger>
-          <TabsTrigger value="driver">Register as Driver</TabsTrigger>
+        <TabsList className="grid w-full grid-cols-2 mb-6 bg-gray-100 rounded-full p-1">
+          <TabsTrigger 
+            value="customer" 
+            className="rounded-full data-[state=active]:bg-loadr data-[state=active]:text-white"
+          >
+            Book a Delivery
+          </TabsTrigger>
+          <TabsTrigger 
+            value="driver" 
+            className="rounded-full data-[state=active]:bg-loadr data-[state=active]:text-white"
+          >
+            Register as Driver
+          </TabsTrigger>
         </TabsList>
         
         <TabsContent value="customer">
