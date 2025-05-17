@@ -24,12 +24,12 @@ const Index = () => {
     <div className="min-h-screen font-sans">
       <Navbar />
       <Hero />
+      <Contact />
       <Services />
       <HowItWorks />
       <About />
       <WhyChooseUs />
       <Testimonials />
-      <Contact />
       <Footer />
     </div>
   );
