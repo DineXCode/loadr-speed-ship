@@ -7,22 +7,22 @@ const services = [
   {
     icon: <Truck className="h-10 w-10 text-loadr" />,
     title: 'Intra-city Logistics',
-    description: 'Fast, reliable same-day delivery within city limits with real-time tracking and transparent pricing.'
+    description: 'Instant delivery. Real-time tracking.'
   },
   {
     icon: <Briefcase className="h-10 w-10 text-loadr" />,
     title: 'Business Transport',
-    description: 'Tailored logistics solutions for businesses with dedicated account management and bulk booking options.'
+    description: 'Business logistics. Bulk booking. Dedicated support.'
   },
   {
     icon: <Home className="h-10 w-10 text-loadr" />,
     title: 'Packers & Movers',
-    description: 'Professional house and office relocation services with packaging, loading, transport, and unloading.'
+    description: 'Seamless home & office shifting, end to end.'
   },
   {
     icon: <Users className="h-10 w-10 text-loadr" />,
     title: 'Express Delivery',
-    description: 'Priority delivery services with guaranteed time slots for urgent shipments and time-sensitive goods.'
+    description: 'Fast-track shipping for urgent deliveries.'
   }
 ];
 
