@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="max-w-3xl text-white">
           <AnimationWrapper delay={0.1}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
-              On-Demand Logistics at Your Fingertips
+              On-Demand LOADR at Your Fingertips
             </h1>
           </AnimationWrapper>
           
@@ -43,7 +43,7 @@ const Hero = () => {
                 onClick={scrollToContact} 
                 className="bg-white text-loadr hover:bg-gray-100 text-lg font-medium px-8 py-6 rounded-full"
               >
-                Book a Load
+                Book a LOADR
                 <Truck className="ml-2 h-5 w-5" />
               </Button>
               

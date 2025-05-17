@@ -98,7 +98,7 @@ const Navbar = () => {
             onClick={() => scrollToSection('contact')}
             className="bg-loadr hover:bg-loadr-dark text-white rounded-full px-6"
           >
-            Book a Load
+            Book a LOADR
           </Button>
         </div>
 
@@ -155,7 +155,7 @@ const Navbar = () => {
               onClick={() => scrollToSection('contact')}
               className="bg-loadr hover:bg-loadr-dark text-white w-full rounded-full"
             >
-              Book a Load
+              Book a LOADR
             </Button>
           </div>
         </div>
