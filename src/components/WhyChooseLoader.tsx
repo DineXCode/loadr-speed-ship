@@ -3,7 +3,7 @@ import React from 'react';
 
 const WhyChooseLoader = () => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-6 h-full">
+    <div className="bg-white shadow-md rounded-lg p-6 w-full">
       <h2 className="text-2xl font-bold mb-6 text-center">Why Choose Loader</h2>
       <div className="space-y-6">
         <div className="flex items-start">
