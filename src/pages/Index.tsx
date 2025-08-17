@@ -9,11 +9,7 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
-import { useAnimateOnScroll } from '@/utils/animate';
-
 const Index = () => {
-  // Initialize animation observers
-  useAnimateOnScroll();
 
   // Scroll to top on page load
   useEffect(() => {
