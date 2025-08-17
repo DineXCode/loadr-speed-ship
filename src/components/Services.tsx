@@ -42,11 +42,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className={cn(
-                "bg-white p-6 rounded-xl border border-gray-100 card-shadow transition duration-300 animated-element",
-                index % 2 === 0 ? "slide-in" : "fade-in"
-              )}
-              style={{ animationDelay: `${0.1 * index}s` }}
+              className="bg-white p-6 rounded-xl border border-gray-100 card-shadow"
             >
               <div className="flex items-start">
                 <div className="flex-shrink-0 p-3 bg-loadr-50 rounded-lg mr-4">

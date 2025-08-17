@@ -36,8 +36,7 @@ const HowItWorks = () => {
           {steps.map((step, index) => (
             <div 
               key={index} 
-              className="relative animated-element fade-in"
-              style={{ animationDelay: `${0.2 * index}s` }}
+              className="relative"
             >
               <div className="flex flex-col items-center">
                 <div className="flex justify-center items-center w-24 h-24 bg-loadr rounded-full mb-6 relative z-10">

@@ -32,7 +32,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
   vehiclePhoto
 }) => {
   return (
-    <div className="animated-element fade-in" style={{ animationDelay: '0.2s' }}>
+    <div>
       <Tabs defaultValue={userType} onValueChange={(value) => setUserType(value as 'customer' | 'driver')}>
         <TabsList className="grid w-full grid-cols-2 mb-6 bg-gray-100 rounded-full p-1">
           <TabsTrigger 

@@ -75,14 +75,14 @@ const Contact = () => {
   return (
     <section id="contact" className="relative py-20 px-4 sm:px-8 md:px-12 lg:px-24 bg-gradient-to-b from-white to-gray-50">
       {/* Background accent */}
-      <div className="absolute top-0 left-0 w-full h-20 bg-loadr opacity-5 transform -skew-y-2"></div>
+      <div className="absolute top-0 left-0 w-full h-20 bg-loadr opacity-5"></div>
       
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
             <span className="relative">
               Book Your Delivery
-              <span className="absolute bottom-2 left-0 w-full h-3 bg-loadr/10 -z-10 transform skew-x-2"></span>
+              <span className="absolute bottom-2 left-0 w-full h-3 bg-loadr/10 -z-10"></span>
             </span>
           </h2>
           <div className="w-24 h-1 bg-loadr mx-auto mb-6"></div>
@@ -92,7 +92,7 @@ const Contact = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="bg-white p-8 md:p-10 rounded-2xl shadow-2xl border border-gray-100 transform md:translate-y-4 md:-rotate-1 hover:rotate-0 transition-transform duration-300">
+          <div className="bg-white p-8 md:p-10 rounded-2xl shadow-2xl border border-gray-100">
             <ContactForm 
               formData={formData}
               userType={userType}
@@ -112,7 +112,7 @@ const Contact = () => {
                 estimatedDistance={userType === 'customer' ? estimatedDistance : null} 
               />
               
-              <div className="mt-12 bg-loadr text-white p-6 rounded-xl shadow-lg transform md:-rotate-1 hover:rotate-0 transition-transform duration-300">
+              <div className="mt-12 bg-loadr text-white p-6 rounded-xl shadow-lg">
                 <h3 className="text-xl font-bold mb-4">Why Choose Loadr</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">

@@ -42,11 +42,7 @@ const About = () => {
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className={cn(
-                "bg-white p-6 rounded-xl border border-gray-100 card-shadow hover:border-loadr-100 transition duration-300 animated-element",
-                index % 2 === 0 ? "slide-in" : "fade-in"
-              )}
-              style={{ animationDelay: `${0.1 * index}s` }}
+              className="bg-white p-6 rounded-xl border border-gray-100 card-shadow hover:border-loadr-100"
             >
               <div className="mb-4">{feature.icon}</div>
               <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
@@ -55,7 +51,7 @@ const About = () => {
           ))}
         </div>
 
-        <div className="mt-16 p-8 bg-gray-50 rounded-2xl animated-element fade-in">
+        <div className="mt-16 p-8 bg-gray-50 rounded-2xl">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-4">Our Mission</h3>

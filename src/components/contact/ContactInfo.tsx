@@ -9,7 +9,7 @@ interface ContactInfoProps {
 
 const ContactInfo: React.FC<ContactInfoProps> = ({ estimatedPrice, estimatedDistance }) => {
   return (
-    <div className="animated-element slide-in">
+    <div>
       <h3 className="text-2xl font-semibold mb-6">Get In Touch</h3>
       
       <div className="mb-8">

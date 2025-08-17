@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <nav
       className={cn(
-        'fixed top-0 w-full z-50 transition-all duration-300',
+        'fixed top-0 w-full z-50',
         isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
       )}
     >
@@ -57,37 +57,37 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-8">
           <button
             onClick={() => scrollToSection('hero')}
-            className="font-medium text-white hover:text-loadr transition"
+            className="font-medium text-white hover:text-loadr"
           >
             Home
           </button>
           <button
             onClick={() => scrollToSection('services')}
-            className="font-medium text-white hover:text-loadr transition"
+            className="font-medium text-white hover:text-loadr"
           >
             Services
           </button>
           <button
             onClick={() => scrollToSection('pricing')}
-            className="font-medium text-white hover:text-loadr transition"
+            className="font-medium text-white hover:text-loadr"
           >
             Pricing
           </button>
           <button
             onClick={() => scrollToSection('track')}
-            className="font-medium text-white hover:text-loadr transition"
+            className="font-medium text-white hover:text-loadr"
           >
             Track
           </button>
           <button
             onClick={() => scrollToSection('about')}
-            className="font-medium text-white hover:text-loadr transition"
+            className="font-medium text-white hover:text-loadr"
           >
             About Us
           </button>
           <button
             onClick={() => scrollToSection('contact')}
-            className="font-medium text-white hover:text-loadr transition"
+            className="font-medium text-white hover:text-loadr"
           >
             Contact
           </button>

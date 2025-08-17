@@ -91,13 +91,13 @@ const Testimonials = () => {
               <div className="flex gap-2">
                 <button 
                   onClick={prevTestimonial} 
-                  className="p-2 border border-gray-200 rounded-full hover:bg-loadr hover:text-white hover:border-loadr transition"
+                  className="p-2 border border-gray-200 rounded-full hover:bg-loadr hover:text-white hover:border-loadr"
                 >
                   <ArrowLeft className="h-5 w-5" />
                 </button>
                 <button 
                   onClick={nextTestimonial} 
-                  className="p-2 border border-gray-200 rounded-full hover:bg-loadr hover:text-white hover:border-loadr transition"
+                  className="p-2 border border-gray-200 rounded-full hover:bg-loadr hover:text-white hover:border-loadr"
                 >
                   <ArrowRight className="h-5 w-5" />
                 </button>

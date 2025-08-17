@@ -45,8 +45,7 @@ const WhyChooseUs = () => {
           {reasons.map((reason, index) => (
             <div 
               key={index} 
-              className="flex items-start animated-element fade-in"
-              style={{ animationDelay: `${0.1 * index}s` }}
+              className="flex items-start"
             >
               <div className="flex-shrink-0 mr-4 mt-1">
                 <div className="bg-loadr-50 p-1 rounded-full">
@@ -61,7 +60,7 @@ const WhyChooseUs = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-loadr text-white p-8 rounded-2xl animated-element fade-in">
+        <div className="mt-16 bg-loadr text-white p-8 rounded-2xl">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
               <div className="flex items-center mb-4">
@@ -79,7 +78,7 @@ const WhyChooseUs = () => {
             <div>
               <a 
                 href="#contact" 
-                className="inline-block bg-white text-loadr font-medium py-3 px-6 rounded-full hover:bg-gray-100 transition duration-300"
+                className="inline-block bg-white text-loadr font-medium py-3 px-6 rounded-full hover:bg-gray-100"
                 onClick={(e) => {
                   e.preventDefault();
                   const element = document.getElementById('contact');

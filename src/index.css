@@ -56,26 +56,15 @@
 
 @layer components {
   .btn-loadr {
-    @apply bg-[#f93a0e] hover:bg-[#d32f00] text-white font-medium py-3 px-6 rounded-full transition duration-300 inline-flex items-center justify-center;
+    @apply bg-[#f93a0e] hover:bg-[#d32f00] text-white font-medium py-3 px-6 rounded-full inline-flex items-center justify-center;
   }
 
   .btn-loadr-outline {
-    @apply border-2 border-[#f93a0e] text-[#f93a0e] hover:bg-[#f93a0e] hover:text-white font-medium py-3 px-6 rounded-full transition duration-300 inline-flex items-center justify-center;
+    @apply border-2 border-[#f93a0e] text-[#f93a0e] hover:bg-[#f93a0e] hover:text-white font-medium py-3 px-6 rounded-full inline-flex items-center justify-center;
   }
 
   .card-shadow {
     @apply shadow-[0_8px_30px_rgb(0,0,0,0.05)];
   }
 
-  .animated-element {
-    opacity: 0;
-  }
-
-  .animated-element.fade-in {
-    animation: fade-in 0.5s ease-out forwards;
-  }
-
-  .animated-element.slide-in {
-    animation: slide-in 0.5s ease-out forwards;
-  }
 }

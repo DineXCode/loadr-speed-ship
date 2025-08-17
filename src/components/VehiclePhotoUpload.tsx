@@ -77,7 +77,7 @@ const VehiclePhotoUpload: React.FC<VehiclePhotoUploadProps> = ({ onPhotoUploaded
         
         {isUploading && (
           <div className="flex items-center justify-center">
-            <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-loadr"></div>
+            <div className="rounded-full h-6 w-6 border-b-2 border-loadr"></div>
             <span className="ml-2 text-sm text-gray-600">Uploading...</span>
           </div>
         )}
